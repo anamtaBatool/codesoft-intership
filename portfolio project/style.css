@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #420202;
+    color: #f0eded;
+
+}
+
+#header{
+    width:100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 240px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #f0eded;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f5f0f0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #272525;
+    
+}
+
+/*about*/
+
+#about{
+    padding: 80px;
+    color: #ababab;
+    background-color:#420202;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 50%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.about-col-2{
+    flex-basis: 40%;
+    font-size: 20px;
+    
+}
+
+.sub-title{
+    font-weight: 600;
+    font-size: 60px;
+    color: #f0eded;
+    
+}
+
+/*Skills*/
+#Skills {
+    font-weight: 200;
+}
+.Skills img{
+    width: 30%;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+#Skills::before {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: #420202;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+#Skills ul li {
+    margin: 20px 0;
+}
+
+#Skills ul li span {
+    color: #1a1818;
+    font-size: 25px;
+}
+
+
+/*Expertise*/
+
+
+#MY Expertise { 
+    padding: 30px 0;
+}
+
+.Expertise {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr)); 
+    grid-gap: 40px;
+    margin-top: 50px; 
+    
+}
+
+.Expertise div {
+    background-color: #222020;
+    padding: 40px;
+    border-radius: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow:0 2px 4px rgba(90, 84, 84, 0.1); 
+}
+
+.Expertise div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.Expertise div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px; 
+}
+
+.Expertise div p {
+    font-size: 20px; 
+    color: #ece2e2; 
+    transition: font-size 0.5s;
+}
+
+.Expertise  div a {
+    text-decoration: none; 
+    color: #000000; 
+    font-size: 25px;
+    font-weight: bold; 
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.Expertise div a:hover{
+    background: #e6e0e0;
+    transform: translateY(-10px);
+
+}
+
+/*Expertise*/
+
+
+#MY Expertise { 
+    padding: 30px 0;
+}
+
+.Expertise {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr)); 
+    grid-gap: 40px;
+    margin-top: 50px; 
+    
+}
+
+.Expertise div {
+    background-color: #222020;
+    padding: 40px;
+    border-radius: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow:0 2px 4px rgba(90, 84, 84, 0.1); 
+}
+
+.Expertise div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.Expertise div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px; 
+}
+
+.Expertise div p {
+    font-size: 20px; 
+    color: #ece2e2; 
+}
+
+.Expertise  div a {
+    text-decoration: none; 
+    color: #000000; 
+    font-size: 25px;
+    font-weight: bold; 
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.Expertise div a:hover{
+    background: #eeebeb;
+    transform: translateY(-10px);
+
+}
+
+.Expertise div h2:hover {
+    color: #d8d4d4;
+    transition: color 0.5s;
+    transform: translateY(-10px);
+}
+
+.Expertise div p:hover{   
+     font-size: 22px;
+    transform: translateY(-10px);
+}
+
+/*---Resume---*/
+#resume-section {
+    padding: 45px 0;
+    background-color: #0e0d0d;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#resume-section h2 {
+    font-size: 20px;
+    color:#e0e0e9;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#resume-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.resume-link {
+    text-decoration: none;
+    background-color: #f5f0f0;
+    color: #141414;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px; 
+    margin-top: 15px; 
+    display: inline-block; 
+}
+
+.resume-link:hover {
+    background-color: #420202;
+}
+
+/*Contact*/
+.Contact-left{
+    flex-basis: 30%;
+}
+
+.Contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #d8d4d4;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right:15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #181717;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background-color: #ababab;
+    color: #181717;
+
+}
+
+.Contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #eeebeb;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ababab;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn.btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
